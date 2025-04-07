@@ -1,8 +1,10 @@
 html {
-  //   height: 100%;
+  min-height: 100vh;
 }
 
 body {
+  height: 100%;
+  min-height: 100vh;
   background: linear-gradient(
     180deg,
     rgba(3, 56, 244, 0.71) 0%,
@@ -13,7 +15,14 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1120px;
+  min-height: 100vh;
   margin: 16px;
-  //   margin: 0 auto;
+
+  @media @min1200 {
+    display: flex;
+    gap: 32px;
+    margin: 0 auto;
+    padding: 16px 0;
+  }
 }
